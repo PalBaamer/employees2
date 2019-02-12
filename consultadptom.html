@@ -1,0 +1,27 @@
+<?php
+   include('session.php');
+   
+?>
+<html>
+			<head>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+						<title>Consultar un empleado introduciendo el id</title>
+			</head>
+				<body bgcolor="#79CEF5">
+					<form name='fno' action='consultadptom.php' method='post'>
+					<h1>Consultar el departamento</h1>
+					<table>
+					 <tr>
+							 <td>Consultar el departamento en el que se encuentra el empleado con el id:
+							 <td><input id="idEmp" type="number" class="form-control" name="idEmp" placeholder="Id empleado">
+					 </tr>
+					</table>
+					<button class="btn btn-outline-success" type="submit">Mostrar</button>		
+					</div>
+					
+					 <a class="btn btn-outline-success" href="menu.php">Volver</a>
+					<a href = "logout.php">Cerrar Sesion</a>
+			</body>
+</html>

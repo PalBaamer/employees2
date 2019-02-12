@@ -1,0 +1,32 @@
+<?php
+   include('session.php');
+   
+?>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  
+   <head>
+      <title> Modifica el salario </title>
+   </head>
+   <body>
+   <h2> Cambio de salario </h2>
+	  <form action="cambiosal.php" method="post">
+			<div class="form-group">
+				<label for="idEmployee">Introduce el id del empleado a modificar:</label>
+				<input id="idEmployee" type="number" class="form-control" name="idEmployee" placeholder="ID empleado">
+				
+			</div>
+			<div class="form-group">
+				<label for="salarioEmp">Introduce la cantidad a modificar:</label>
+				<input id="salarioEmp" type="number" class="form-control" name="salarioEmp" placeholder="Cantidad">
+				
+			</div>
+			
+			<button type="submit" class="btn btn-primary" >Enviar</button>
+	</form>
+	 <a class="btn btn-outline-success" href="menu.php">Volver</a>
+      <a href = "logout.php">Cerrar Sesion</a>
+   </body>
+   
+</html>
+
